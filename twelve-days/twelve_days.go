@@ -2,11 +2,6 @@ package twelve
 
 import "strings"
 
-const (
-	FIRST_VERSE = iota + 1
-	LAST_VERSE  = iota + 11
-)
-
 var verses = []string{
 	"On the first day of Christmas my true love gave to me: a Partridge in a Pear Tree.",
 	"On the second day of Christmas my true love gave to me: two Turtle Doves, and a Partridge in a Pear Tree.",
