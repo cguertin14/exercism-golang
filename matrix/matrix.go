@@ -9,7 +9,7 @@ import (
 type Matrix [][]int
 
 func (m Matrix) Rows() (res [][]int) {
-	res = make([][]int, len(m))
+	res = make(Matrix, len(m))
 	for i, row := range m {
 		res[i] = make([]int, len(row))
 		for j, cell := range row {
@@ -20,7 +20,7 @@ func (m Matrix) Rows() (res [][]int) {
 }
 
 func (m Matrix) Cols() (res [][]int) {
-	res = make([][]int, len(m[0]))
+	res = make(Matrix, len(m[0]))
 	for i := range res {
 		res[i] = make([]int, len(m))
 	}
